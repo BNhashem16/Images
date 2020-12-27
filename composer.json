@@ -1,0 +1,24 @@
+{
+    "name": "hashem/image",
+    "description": "CRUD Image From Any Section",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Ahmed Mohamed Hashem",
+        "email": "a.hashem@thetailorsdev.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hashem\\Image\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hashem\\Image\\ImageServiceProvider"
+            ]
+        }
+    }
+}
