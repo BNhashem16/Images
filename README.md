@@ -15,7 +15,7 @@ The recommended way to install Hashem is through
 [Composer](https://getcomposer.org/).
 
 ```bash
-composer require a.hashem/image
+composer require ahashem/image
 ```
 
 ## Storage Link
@@ -97,8 +97,8 @@ In destroy Model function: Image will removed From Database and also will Remove
 
     public function destroy(Request $request , Post $post)
     {
-        Image::destroy('image' , $model);
-        Image::destroy('banner' , $model);
+        Image::destroy('image' , $post);
+        Image::destroy('banner' , $post);
 
         // You should pass Row to function
     }
