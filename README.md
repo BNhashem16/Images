@@ -15,7 +15,7 @@ The recommended way to install Hashem is through
 [Composer](https://getcomposer.org/).
 
 ```bash
-composer require ahashem/image
+composer require a.hashem/image
 ```
 
 ## Storage Link
