@@ -1,4 +1,4 @@
-# Hashem, Image CRUD In One Line
+# Image CRUD In One Line
  [![Issues](https://img.shields.io/github/issues/BNhashem16/Images.svg?style=plastic&logo=appveyor)](https://github.com/BNhashem16/Images)
 
 [![Forks](https://img.shields.io/github/forks/BNhashem16/Images.svg?style=plastic&logo=appveyor)](https://github.com/BNhashem16/Images)
@@ -9,9 +9,9 @@
 
 [![Twitter](https://img.shields.io/twitter/url?url=https://twitter.com/dev_hashem%2FBNhashem16%2FImages)](https://twitter.com/dev_hashem)
 
-## Installing Hashem
+## Installing Image Package
 
-The recommended way to install Hashem is through
+The recommended way to install Image Package is through
 [Composer](https://getcomposer.org/).
 
 ```bash
@@ -49,12 +49,12 @@ you should Go to `config\app.php` , in Provider array you should put this Line:
     public function store(Request $request)
     {
         $post = new Post([
-            'image' => Image::store('pages' , 'image'),
-            'banner' => Image::store('pages' , 'banner'),
+            'image'     => Image::store('posts' , 'image'),
+            'banner'    => Image::store('posts' , 'banner'),
         ]);
         $post->save();
 
-        // pages is the parent Folder 
+        // posts is the parent Folder 
         // image and banner is the childs Folders
         // image and banner also request name , that mean image or banner is required.
     }
@@ -75,11 +75,11 @@ In update Model function:
     public function update(Request $request , Post $post)
     {
         $post->update([
-            'image'  = Image::update('pages' , 'image' , $post),
-            'banner' = Image::update('pages' , 'banner' , $post),
+            'image'  = Image::update('posts' , 'image' , $post),
+            'banner' = Image::update('posts' , 'banner' , $post),
         ]);
 
-        // pages is the parent Folder 
+        // posts is the parent Folder 
         // image and banner is the childs Folders
         // image and banner also request name , that mean image or banner is required.
         // You should pass Row to function
