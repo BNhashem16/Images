@@ -55,7 +55,7 @@ you should Go to `config\app.php` , in Provider array you should put this Line:
         $post->save();
 
         // posts is the parent Folder 
-        // image and banner is the childs Folders
+        // image and banner are the childs Folders
         // image and banner also request name , that mean image or banner is required.
     }
 
@@ -79,8 +79,8 @@ In update Model function:
             'banner' = Image::update('posts' , 'banner' , $post),
         ]);
 
-        // posts is the parent Folder 
-        // image and banner is the childs Folders
+        // posts are the parent Folder 
+        // image and banner are the childs Folders
         // image and banner also request name , that mean image or banner is required.
         // You should pass Row to function
     }
