@@ -11,13 +11,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Hashem\\File\\": "src/"
+            "Bnhashem\\File\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Hashem\\File\\FileServiceProvider"
+                "Bnhashem\\File\\FileServiceProvider"
             ]
         }
     }

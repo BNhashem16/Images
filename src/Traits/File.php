@@ -1,5 +1,5 @@
 <?php
-namespace Hashem\File\Traits;
+namespace Bnhashem\File\Traits;
 
 use Illuminate\Support\Facades\Storage;
 

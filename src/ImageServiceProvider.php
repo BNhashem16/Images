@@ -1,6 +1,6 @@
 <?php
 
-namespace Hashem\File;
+namespace Bnhashem\File;
 
 use Illuminate\Support\ServiceProvider;
 
