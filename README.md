@@ -15,7 +15,7 @@ The recommended way to install File Package is through
 [Composer](https://getcomposer.org/).
 
 ```bash
-composer require a.hashem/image
+composer require bnhashem/file
 ```
 
 ## Storage Link
