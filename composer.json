@@ -1,6 +1,6 @@
 {
     "name": "ahashem/image",
-    "description": "CRUD Image From Any Section",
+    "description": "CRUD File From Any Section",
     "type": "library",
     "license": "MIT",
     "authors": [{
@@ -11,13 +11,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Hashem\\Image\\": "src/"
+            "Hashem\\File\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Hashem\\Image\\ImageServiceProvider"
+                "Hashem\\File\\FileServiceProvider"
             ]
         }
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Hashem\Image;
+namespace Hashem\File;
 
 use Illuminate\Support\ServiceProvider;
 
-class ImageServiceProvider extends ServiceProvider
+class FileServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
