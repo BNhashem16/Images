@@ -11,9 +11,14 @@ trait File
     # Store Files.
     public static function store($folder , $parameter)
     {
-        if (request()->$parameter !== null) {
+        # Case 1 --> If Input Not Null
+        if (request()->$parameter !== null)
+        {
             $file = request()->file($parameter)->store($folder.'/'.$parameter, 'public');
-        } else {
+        }
+        # Case 2 --> If Input Is Null
+        else
+        {
             $file = null;
         }
         return $file;
@@ -22,10 +27,16 @@ trait File
     # Update Files.
     public static function update($folder , $parameter , $model)
     {
-        if (request()->$parameter !== null) {
+        # Case 1 --> If Input Not Null
+       if (request()->$parameter !== null)
+        {
             Storage::disk('public')->delete($model->$parameter);
             $file = request()->file($parameter)->store($folder.'/'.$parameter, 'public');
-        } else {
+        }
+
+        # Case 2 --> If Input Is Null
+        else
+        {
             $file = $model->$parameter;
         }
         return $file;

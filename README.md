@@ -20,7 +20,7 @@ composer require bnhashem/file
 
 ## Storage Link
 
-Creating Shourtcut of storage folder , you will found shortcut by following this path `your-project/public`
+Creating Shourtcut of storage folder ,  you will found shortcut by following this path `your-project/public`
 
 ```bash
 php artisan storage:link
@@ -36,14 +36,14 @@ you should Go to `config\app.php` , in Provider array you should put this Line:
         /*
          * Laravel Framework Service Providers...
          */
-        Hashem\File\FileServiceProvider::class,
+         Bnhashem\File\FileServiceProvider::class,
     ],
 ```
 
 ## Store File
 
 ```php
-    use Hashem\File\Traits\File;
+    use Bnhashem\File\Traits\File;
 
 
     public function store(Request $request)
@@ -69,7 +69,7 @@ In update Model function:
 - If `$request->image` or `$request->banner` is Not Equal null , that mean image or banner will removed from Database and Server and store New image that will comming From request 
 
 ```php
-    use Hashem\File\Traits\File;
+    use Bnhashem\File\Traits\File;
 
 
     public function update(Request $request , Post $post)
@@ -92,7 +92,7 @@ In update Model function:
 In destroy Model function: File will removed From Database and also will Removed from server.
 
 ```php
-    use Hashem\File\Traits\File;
+    use Bnhashem\File\Traits\File;
 
 
     public function destroy(Request $request , Post $post)
