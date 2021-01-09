@@ -104,3 +104,15 @@ In destroy Model function: File will removed From Database and also will Removed
     }
 
 ```
+
+## How to get file
+
+For Example if you upload photo , you will find it According to this path :
+
+```php
+    <img src="{{ url('storage/'.$post->image) }}" >
+
+    <img src="{{ url('storage/'.$post->banner) }}" >
+
+```
+
